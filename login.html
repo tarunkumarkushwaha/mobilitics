@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan job info login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="./output.css" rel="stylesheet">
+    <script type="module" src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="sticky top-0 z-20">
+        <nav class="bg-slate-800 sticky top-0 z-20 px-8 md:px-auto min-h-20">
+            <button class="absolute top-5 left-4 md:hidden flex duration-200" id="menu-button"><a href="/index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-indigo-100" viewBox="0 0 24 24"
+                        fill="currentColor" width="44" height="44">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" />
+                    </svg>
+                </a>
+            </button>
+            <div class="flex md:flex-row flex-col md:justify-between justify-center items-center">
+                <div
+                    class="m-4 p-1 md:ml-0 ml-4 md:pl-0 pl-10 text-2xl flex justify-center items-center font-extrabold">
+                    <span class="text-indigo-100">Japan</span> <span class="text-red-600">Job</span> <span
+                        class="text-indigo-100">Info</span>
+                </div>
+                <div class="text-grey-500 mx-8">
+                    <ul id="menu"
+                        class="flex font-semibold md:justify-between justify-center items-center md:flex-row flex-col gap-5">
+                        <li class="text-indigo-100 hover:text-indigo-400"><a href="/">Home</a></li>
+                        <li class="text-indigo-100 hover:text-indigo-400"><a href="contact.html">Enquiry</a></li>
+                        <li class="text-indigo-100 hover:text-indigo-400"><a href="login.html">login</a></li>
+                    </ul>
+                </div>
+
+                <div id="right-menu-items" class="flex items-center m-2">
+                    <input type="search" id="job-search"
+                        class="block outline-none w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Search jobs..." />
+                    <button id="langbtn"
+                        class=" text-white w-36 p-2 ml-2 hover:border-slate-500 rounded-md border border-slate-950">
+                        日本語
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="bg-slate-900/65">
+        <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+
+            <div class="w-full rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0 bg-gray-800 border-gray-700">
+                <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+                    <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-100 md:text-2xl ">
+                        Sign in to your account
+                    </h1>
+                    <form class="space-y-4 md:space-y-6" action="/index.html">
+                        <div>
+                            <label for="email" class="block mb-2 text-sm font-medium text-gray-100 ">Your email</label>
+                            <input type="email" placeholder="email"
+                                class="bg-gray-50 border border-gray-300 text-gray-100 sm:text-sm rounded-lg block w-full p-2.5">
+                        </div>
+                        <div>
+                            <label for="password" class="block mb-2 text-sm font-medium text-gray-100">Password</label>
+                            <input type="password" placeholder="password"
+                                class="bg-slate-100 border border-gray-300 text-gray-100 sm:text-sm rounded-lg block w-full p-2.5">
+                        </div>
+                        <button type="submit"
+                            class="w-full text-white bg-primary-600 hover:bg-primary-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Sign
+                            in</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

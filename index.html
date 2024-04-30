@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work Opportunities in Japan</title>
+    <title>Japan job info</title>
     <link rel="stylesheet" href="styles.css">
     <link href="./output.css" rel="stylesheet">
     <script type="module" src="script.js" defer></script>
 </head>
 
 <body>
-    <header>
+    <header class="sticky top-0 z-20">
         <nav class="bg-slate-800 sticky top-0 z-20 px-8 md:px-auto min-h-20">
             <button class="absolute top-5 left-4 md:hidden flex duration-200" id="menu-button">
                 <svg xmlns="http://www.w3.org/2000/svg" class="text-indigo-100" viewBox="0 0 24 24" fill="currentColor"
@@ -20,28 +20,29 @@
                     <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" />
                 </svg>
             </button>
-            <button id="langbtn"
-                class="absolute text-white z-20 top-5 right-8 p-2 hover:border-slate-500 rounded-md border border-slate-950"
-                >
-                日本語
-            </button>
-            <div class=" flex md:flex-row flex-col justify-between items-center">
-                <div class="w-80 m-4 p-3 text-3xl md:pl-0 pl-10 font-extrabold">
-                    <span class="text-indigo-100">Japan</span> <span class="text-red-600">Job</span> <span class="text-indigo-100">Info</span>
+            <div class="flex md:flex-row flex-col md:justify-between justify-center items-center">
+                <div
+                    class="m-4 p-1 md:ml-0 ml-4 md:pl-0 pl-10 text-2xl flex justify-center items-center font-extrabold">
+                    <span class="text-indigo-100">Japan</span> <span class="text-red-600">Job</span> <span
+                        class="text-indigo-100">Info</span>
                 </div>
-                <div class="text-grey-500">
+                <div class="text-grey-500 mx-8">
                     <ul id="menu"
-                        class="flex pl-16 font-semibold md:justify-between justify-center items-center md:flex-row flex-col gap-5">
+                        class="flex font-semibold md:justify-between justify-center items-center md:flex-row flex-col gap-5">
                         <li class="text-indigo-100 hover:text-indigo-400"><a href="/">Home</a></li>
-                        <li class="text-indigo-100 hover:text-indigo-400"><a href="/about.html">About</a></li>
-                        <li class="text-indigo-100 hover:text-indigo-400"><a href="/contact">Enquiry</a></li>
+                        <li class="text-indigo-100 hover:text-indigo-400"><a href="contact.html">Enquiry</a></li>
+                        <li class="text-indigo-100 hover:text-indigo-400"><a href="login.html">login</a></li>
                     </ul>
                 </div>
 
-                <div class="flex items-center ps-3 pr-20">
+                <div id="right-menu-items" class="flex items-center m-2">
                     <input type="search" id="job-search"
                         class="block outline-none w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="Search jobs..." />
+                    <button id="langbtn"
+                        class=" text-white w-36 p-2 ml-2 hover:border-slate-500 rounded-md border border-slate-950">
+                        日本語
+                    </button>
                 </div>
             </div>
         </nav>
@@ -63,115 +64,39 @@
                 <div class="container mx-auto px-4">
                     <h2 class="text-3xl font-semibold text-gray-100 mb-8">Most Popular Jobs in Japan</h2>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 duration-500">
-                            <img src="https://images.unsplash.com/photo-1534665482403-a909d0d97c67?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                alt="Job" class="w-full h-64 object-cover">
-                            <div class="p-6">
-                                <h3 class="text-xl font-semibold text-gray-800">Software Engineer</h3>
-                                <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                </p>
-                                <a href="#" class="block mt-4 text-blue-500 font-semibold hover:underline">View
-                                    Details</a>
-                            </div>
-                        </div>
-                        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 duration-500">
-                            <img src="https://plus.unsplash.com/premium_photo-1684367040516-2ebf618cc8f6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                alt="Job" class="w-full h-64 object-cover">
-                            <div class="p-6">
-                                <h3 class="text-xl font-semibold text-gray-800">English Teacher</h3>
-                                <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                </p>
-                                <a href="#" class="block mt-4 text-blue-500 font-semibold hover:underline">View
-                                    Details</a>
-                            </div>
-                        </div>
-                        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 duration-500">
-                            <img src="https://images.unsplash.com/photo-1708659015356-f653b22fa77a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                alt="Job" class="w-full h-64 object-cover">
-                            <div class="p-6">
-                                <h3 class="text-xl font-semibold text-gray-800">Tourism</h3>
-                                <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                </p>
-                                <a href="#" class="block mt-4 text-blue-500 font-semibold hover:underline">View
-                                    Details</a>
-                            </div>
-                        </div>
-                    </div>
+                    <div id="poularjobs" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
                 </div>
             </section>
-            <section class="bg-gray-200 py-16">
+
+            <section>
+                <div class="md:h-[450px] h-80 w-[85vw] m-4 relative mx-auto">
+                    <div class="slider w-full h-full overflow-hidden rounded-2xl">
+                        <div class="slides flex transition-transform duration-500 ease-in-out">
+                            <img src="https://plus.unsplash.com/premium_photo-1675610853926-6d69a0a99ea7?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="tokyo" class="w-[85vw]">
+                            <img src="https://plus.unsplash.com/premium_photo-1661882926003-91a51e3dfe64?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="mt fuji" class="w-[85vw]">
+                            <img src="https://images.unsplash.com/photo-1598957232485-fab51e0ed7e8?q=80&w=1633&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="cherry blossom" class="w-[85vw]">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="bg-slate-800/75 py-16">
+                <div class="flex justify-center items-center">
+                    <h2 class="text-3xl font-semibold text-gray-100 italic mb-8 m-5">About Japan</h2>
+                </div>
                 <div class="container mx-auto px-4">
-                    <h2 class="text-3xl font-semibold text-gray-800 mb-8">About Japan</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div>
-                            <h3 class="text-xl font-semibold text-gray-800">Culture</h3>
+                            <h3 class="text-2xl italic font-semibold text-gray-100 m-5">Culture</h3>
                             <div id="culture"></div>
                         </div>
-                        <div id="lifestyle">
-                            <h3 class="text-xl font-semibold text-gray-800">Lifestyle</h3>
-                            <div class="mb-8">
-                                <h2 class="text-2xl font-bold mb-4">Work Culture</h2>
-                                <p class="text-gray-700 mb-4">Explore the intricacies of Japan's work culture, from the
-                                    dedication to craftsmanship to the importance of hierarchy and teamwork. Learn about
-                                    salarymen, long work hours, and the balance between work and personal life in
-                                    Japanese society.</p>
-                            </div>
-
-                            <div class="mb-8">
-                                <h2 class="text-2xl font-bold mb-4">Housing and Architecture</h2>
-                                <p class="text-gray-700 mb-4">Discover the unique characteristics of Japanese housing
-                                    and architecture, from traditional wooden homes to modern apartment buildings. Learn
-                                    about tatami mats, sliding doors, and the efficient use of space in Japanese homes.
-                                </p>
-                            </div>
-
-                            <div class="mb-8">
-                                <h2 class="text-2xl font-bold mb-4">Fashion and Beauty</h2>
-                                <p class="text-gray-700 mb-4">Experience the latest trends in Japanese fashion and
-                                    beauty, from traditional kimono to modern streetwear. Explore the world of Japanese
-                                    cosmetics, skincare routines, and the pursuit of kawaii (cuteness) in everyday life.
-                                </p>
-                            </div>
-
-                            <div class="mb-8">
-                                <h2 class="text-2xl font-bold mb-4">Food Culture</h2>
-                                <p class="text-gray-700 mb-4">Indulge in the rich tapestry of Japanese cuisine, from
-                                    exquisite sushi to hearty ramen. Learn about dining etiquette, izakaya culture, and
-                                    the importance of seasonal ingredients in Japanese cooking.</p>
-                            </div>
-
-                            <div class="mb-8">
-                                <h2 class="text-2xl font-bold mb-4">Transportation</h2>
-                                <p class="text-gray-700 mb-4">Navigate the bustling streets of Japan's cities with ease,
-                                    thanks to the efficient transportation network. Learn about the iconic shinkansen
-                                    (bullet trains), crowded subway systems, and the convenience of cycling in urban
-                                    areas.</p>
-                            </div>
-
-                            <div class="mb-8">
-                                <h2 class="text-2xl font-bold mb-4">Leisure and Recreation</h2>
-                                <p class="text-gray-700 mb-4">Discover the diverse range of leisure activities enjoyed
-                                    by people in Japan, from traditional tea ceremonies to karaoke nights. Learn about
-                                    hanami (cherry blossom viewing), onsen (hot spring) retreats, and the love for manga
-                                    and video games.</p>
-                            </div>
-
-                            <div class="mb-8">
-                                <h2 class="text-2xl font-bold mb-4">Health and Wellness</h2>
-                                <p class="text-gray-700 mb-4">Embrace the holistic approach to health and wellness in
-                                    Japan, from the practice of forest bathing to the ritual of onsen bathing. Learn
-                                    about the importance of mindfulness, balanced diets, and regular exercise in
-                                    Japanese lifestyle.</p>
-                            </div>
-
-                            <div>
-                                <h2 class="text-2xl font-bold mb-4">Social Etiquette</h2>
-                                <p class="text-gray-700 mb-4">Navigate social interactions in Japan with grace and
-                                    respect, thanks to the adherence to strict etiquette and customs. Learn about
-                                    bowing, gift-giving, and the concept of saving face in Japanese society.</p>
-                            </div>
+                        <div>
+                            <h3 class="text-2xl italic font-semibold text-gray-100 m-5">Lifestyle</h3>
+                            <div id="lifestyle"></div>
                         </div>
                     </div>
                 </div>

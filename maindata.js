@@ -7,10 +7,6 @@ let sitedata = [{
                 description: "Japan's rich history is woven with threads of tradition, passed down through generations with care and reverence. From the elegant rituals of tea ceremonies to the graceful movements of traditional dance, explore the timeless beauty of Japan's cultural heritage."
             },
             {
-                title: "The Art of Zen",
-                description: "Delve into the serene world of Zen philosophy, where simplicity meets profundity. Discover the art of meditation, the minimalist aesthetics of Zen gardens, and the calming influence of mindfulness practices that have shaped Japanese culture for centuries."
-            },
-            {
                 title: "The Flourishing of the Arts",
                 description: "Immerse yourself in the vibrant world of Japanese arts, where meticulous craftsmanship meets boundless creativity. From the delicate strokes of calligraphy to the intricate designs of kimono textiles, experience the exquisite beauty that defines Japanese artistic expression."
             },
@@ -27,20 +23,12 @@ let sitedata = [{
                 description: "Explore the dynamic world of Japanese pop culture, where ancient traditions meet cutting-edge innovation. From the global phenomenon of anime and manga to the infectious rhythms of J-pop music, discover the cultural icons that have captured the imaginations of people around the world."
             },
             {
-                title: "Timeless Elegance of Geisha",
-                description: "Step into the world of the geisha, where grace, beauty, and artistry converge in a timeless tradition. Learn about the meticulous training and artistry of geisha performers, and discover the enchanting world of traditional Japanese entertainment."
-            },
-            {
                 title: "Nature's Influence",
                 description: "Witness the profound connection between Japanese culture and the natural world, where reverence for nature is woven into the fabric of daily life. From the tranquil beauty of cherry blossoms in spring to the fiery hues of autumn leaves, experience the ever-changing seasons that inspire Japan's cultural expressions."
             },
             {
                 title: "Spirituality and Rituals",
                 description: "Delve into the spiritual traditions that shape Japanese life, from the solemn rituals of Shinto shrines to the contemplative practices of Buddhist temples. Explore the profound significance of rituals and ceremonies in connecting individuals to the divine and fostering a sense of community."
-            },
-            {
-                title: "Preserving Cultural Heritage",
-                description: "Celebrate the efforts to preserve and promote Japan's cultural heritage for future generations. Learn about initiatives to safeguard traditional crafts, protect historic landmarks, and ensure that the rich tapestry of Japanese culture continues to thrive in the modern world."
             }
         ]
     },
@@ -80,8 +68,46 @@ let sitedata = [{
                 description: "Navigate social interactions in Japan with grace and respect, thanks to the adherence to strict etiquette and customs. Learn about bowing, gift-giving, and the concept of saving face in Japanese society."
             }
         ]
-    }],
-    japanese :  [
+    }
+        ,
+    {
+        carddata: [
+            {
+                title: "Software Engineer",
+                imageUrl: "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                description: "Japanese software development: Precision, teamwork, and innovation. From meticulous attention to detail to collaborative spirit, Japan's tech industry embraces quality and innovation. Let's code the future together!"
+            },
+            {
+                title: "English Teacher",
+                imageUrl: "https://plus.unsplash.com/premium_photo-1684367040516-2ebf618cc8f6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                description: "Teaching English in Japan: Bridging cultures, shaping minds. From bustling cities to serene countryside, English teachers in Japan inspire language fluency and cultural exchange."
+            },
+            {
+                title: "Tourism",
+                imageUrl: "https://images.unsplash.com/photo-1708659015356-f653b22fa77a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                description: "Tourism jobs in Japan: Embrace adventure, share culture. From guiding travelers through ancient temples to curating unforgettable experiences, working in Japan's tourism industry offers a world of excitement and cultural immersion."
+            },
+            {
+                title: "Service staff",
+                imageUrl: "https://images.unsplash.com/photo-1708659015356-f653b22fa77a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                description: "Service Staff in Japan: Hospitality at its finest. From bustling city hotels to tranquil ryokans, service staff in Japan embody the spirit of omotenashi, providing warmth and care to every guest."
+            }
+            ,
+            {
+                title: "engineers",
+                imageUrl: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                description: "Japan, renowned for its cutting-edge engineering, warmly welcomes foreign workers, ensuring that the design aspect of their businesses remains onshore"
+            }
+            ,
+            {
+                title: "medical services",
+                imageUrl: "https://images.unsplash.com/photo-1603398938378-e54eab446dde?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                description: "Medical services in Japan have evolved significantly, characterized by cutting-edge technology and high-quality care, attracting patients from around the world."
+            }
+        ]
+    }
+    ],
+    japanese: [
         {
             category: "文化",
             subSections: [
@@ -164,8 +190,44 @@ let sitedata = [{
                 }
             ]
         }
+        ,
+        {
+            carddata: [
+                {
+                    title: "ソフトウェアエンジニア",
+                    imageUrl: "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    description: "日本のソフトウェア開発：精度、チームワーク、イノベーション。 細部への注意から協力的な精神まで、日本のテック業界は品質とイノベーションを受け入れています。 一緒に未来をコード化しましょう！"
+                },
+                {
+                    title: "英語教師",
+                    imageUrl: "https://plus.unsplash.com/premium_photo-1684367040516-2ebf618cc8f6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    description: "日本での英語教育：文化の橋渡し、心の形成。 にぎやかな都市から静かな田園地帯まで、日本の英語教師は言語の流暢さと文化の交流をインスパイアします。"
+                },
+                {
+                    title: "観光",
+                    imageUrl: "https://images.unsplash.com/photo-1708659015356-f653b22fa77a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    description: "日本の観光業の仕事：冒険を楽しみ、文化を共有。 古代の寺院を案内したり、忘れられない体験を企画したり、日本の観光業界で働くことは、刺激と文化の没入の世界を提供します。"
+                },
+                {
+                    title: "サービススタッフ",
+                    imageUrl: "https://images.unsplash.com/photo-1708659015356-f653b22fa77a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    description: "日本のサービススタッフ：最高のおもてなし。 にぎやかな都市のホテルから静かな旅館まで、日本のサービススタッフは、おもてなしの精神を体現し、すべてのゲストに温かさとケアを提供します。"
+                }
+                ,
+                {
+                    title: "エンジニア",
+                    imageUrl: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    description: "日本は、最先端のエンジニアリングで知られ、外国人労働者を心から歓迎し、ビジネスの設計側面を国内に保つことを確認しています。"
+                },
+                {
+                    title: "医療サービス",
+                    imageUrl: "https://images.unsplash.com/photo-1603398938378-e54eab446dde?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    description: "日本の医療サービスは大きく進化しており、最新技術と高品質なケアが特徴で、世界中から患者が集まります。"
+                }
+            ]
+        }
     ]
-    
+
 }
 ];
 
