@@ -2853,16 +2853,19 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  padding: 8px 16px;
+  padding: 4px 8px;
   background-color: #f0f0f0;
   border: 1px solid #ccc;
   border-radius: 4px;
   cursor: pointer;
 }
 
-/* .goog-te-gadget span {
-    display: none;
-  } */
+#google_translate_element {
+  position: absolute;
+  bottom: 0px;
+  right: 8px;
+  margin-bottom: 35px;
+}
 
 @media (min-width: 640px){
   .sm\:container{
@@ -3138,7 +3141,3 @@ body {
     }
   }
 }
-
-
-  
-  
