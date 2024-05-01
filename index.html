@@ -36,7 +36,7 @@
                 </div>
 
                 <div id="right-menu-items" class="flex items-center m-2">
-                    <input type="search" id="job-search" 
+                    <input type="search" id="job-search"
                         class="block outline-none w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="Search jobs..." />
                     <button id="langbtn"
@@ -47,12 +47,13 @@
             </div>
         </nav>
     </header>
-    <div class="bg-slate-900/65">
-        <main>
+
+    <main>
+        <div class="bg-slate-900/65">
             <section class="bg-slate-500/65 text-white py-20">
                 <div class="container mx-auto text-center">
-                    <h1 class="text-4xl md:text-6xl font-bold">Explore Work Opportunities in Japan</h1>
-                    <p class="mt-4 text-lg md:text-xl">Discover exciting job openings and immerse yourself in Japanese
+                    <h1 id="slogan" class="text-4xl md:text-6xl font-bold">Explore Work Opportunities in Japan</h1>
+                    <p id="slogandescription" class="mt-4 text-lg md:text-xl">Discover exciting job openings and immerse yourself in Japanese
                         culture.</p>
                     <a href="#"
                         class="mt-8 inline-block bg-white text-blue-500 font-semibold px-6 py-3 rounded-full shadow-md hover:bg-blue-400 hover:text-white transition duration-300">Find
@@ -101,13 +102,27 @@
                     </div>
                 </div>
             </section>
-        </main>
-    </div>
+        </div>
+    </main>
+
     <footer class="bg-gray-900 text-white py-8">
         <div class="container mx-auto text-center">
             <p>&copy; 2024 JapanWork. All rights reserved.</p>
         </div>
+        <div id="google_translate_element"></div>
     </footer>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en' },
+                'google_translate_element'
+            );
+        }
+    </script>
+
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+</script>
 </body>
 
 </html>

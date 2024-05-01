@@ -106,6 +106,13 @@ let sitedata = [{
             }
         ]
     }
+        ,
+    {
+        section1: {
+            text1: "Explore Work Opportunities in Japan",
+            text2: "Discover exciting job openings and immerse yourself in Japanese culture."
+        }
+    }
     ],
     japanese: [
         {
@@ -225,6 +232,13 @@ let sitedata = [{
                     description: "日本の医療サービスは大きく進化しており、最新技術と高品質なケアが特徴で、世界中から患者が集まります。"
                 }
             ]
+        }
+        ,
+        {
+            section1: {
+                text1: "日本での仕事の機会を探索する",
+                text2: "エキサイティングな仕事のオープニングを発見し、日本の文化に浸る。"
+            }
         }
     ]
 

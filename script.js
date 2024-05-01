@@ -10,6 +10,8 @@ const culture = document.getElementById('culture');
 const lifestyle = document.getElementById('lifestyle');
 const poularjobscard = document.getElementById('poularjobs');
 const jobsearch = document.getElementById('job-search');
+const slogandescription = document.getElementById('slogandescription');
+const slogan = document.getElementById('slogan');
 
 let card = (item) => {
     return `
@@ -73,6 +75,8 @@ const togglelang = () => {
         poularjobscard.innerHTML = sitedata[0].english[2].carddata.map((item) => {
             return card(item)
         }).join("")
+        slogan.innerText = sitedata[0].english[3].section1.text1
+        slogandescription.innerText = sitedata[0].english[3].section1.text2
 
     }
     if (japanese) {
@@ -85,6 +89,8 @@ const togglelang = () => {
         poularjobscard.innerHTML = sitedata[0].japanese[2].carddata.map((item) => {
             return card(item)
         }).join("")
+        slogan.innerText = sitedata[0].japanese[3].section1.text1
+        slogandescription.innerText = sitedata[0].japanese[3].section1.text2
     }
 };
 
@@ -130,4 +136,3 @@ function updateSlider() {
 }
 
 setInterval(nextSlide, 2000);
-

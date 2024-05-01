@@ -23,8 +23,28 @@ body {
 
 .great-vibes-regular {
     font-family: "Great Vibes", cursive;
-  }
+}
 
-  .slider {
+.slider {
     z-index: -1;
+}
+
+/* custom css for select  */
+
+.goog-te-combo {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 4px 8px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#google_translate_element {
+    position: absolute;
+    bottom: 0px;
+    right: 8px;
+    margin-bottom: 35px;
 }
