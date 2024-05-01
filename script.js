@@ -1,6 +1,7 @@
 import sitedata from './maindata.js'
 let menuOpen = true;
-let japanese = true
+let japanese = true;
+let searchinput = "";
 const menu = document.getElementById('menu');
 const rightmenuitems = document.getElementById('right-menu-items');
 const menubtn = document.getElementById('menu-button');
@@ -8,7 +9,41 @@ const langbtn = document.getElementById('langbtn');
 const culture = document.getElementById('culture');
 const lifestyle = document.getElementById('lifestyle');
 const poularjobscard = document.getElementById('poularjobs');
+const jobsearch = document.getElementById('job-search');
 
+let card = (item) => {
+    return `
+<div class="bg-white rounded-lg relative pb-8 shadow-md overflow-hidden hover:scale-105 duration-500">
+<img src=${item.imageUrl}
+    alt="Job" class="w-full h-64 object-cover">
+<div class="p-6">
+    <h3 class="text-xl font-semibold text-gray-800">${item.title}</h3>
+    <p class="mt-2 text-gray-600">${item.description}</p>
+    <a href="#" class="absolute bottom-5 mt-4 text-blue-500 font-semibold hover:underline">View
+        Details</a>
+</div>
+</div> `}
+
+let culturediv = (item) => {
+    return `<div class="mb-8">
+           <h2 class="text-2xl text-gray-100 font-bold mb-4">${item.title}</h2>
+           <p class="text-gray-100 mb-4">${item.description}</p>
+</div> `}
+
+let lifestylediv = (item) => {
+    return `<div class="mb-8">
+           <h2 class="text-2xl text-gray-100 font-bold mb-4">${item.title}</h2>
+           <p class="text-gray-100 mb-4">${item.description}</p>
+</div> `}
+
+
+const searchhandler = (e) => {
+    searchinput = e.target.value
+    console.log(e.target.value)
+    poularjobscard.innerHTML = sitedata[0].english[2].carddata.map((item) => {
+        return card(item)
+    }).filter(item => item.toLowerCase().includes(searchinput.toLowerCase())).join("")
+};
 
 const toggleMenu = () => {
     menuOpen = !menuOpen;
@@ -30,70 +65,26 @@ const togglelang = () => {
     }
     if (!japanese) {
         culture.innerHTML = sitedata[0].english[0].subSections.map((item) => {
-            return `
-                         <div class="mb-8">
-                                    <h2 class="text-2xl text-gray-100 font-bold mb-4">${item.title}</h2>
-                                    <p class="text-gray-100 mb-4">${item.description}</p>
-                         </div> `
-        }
-        ).join("")
+            return culturediv(item)
+        }).join("")
         lifestyle.innerHTML = sitedata[0].english[1].subSections.map((item) => {
-            return `
-                         <div class="mb-8">
-                                    <h2 class="text-2xl text-gray-100 font-bold mb-4">${item.title}</h2>
-                                    <p class="text-gray-100 mb-4">${item.description}</p>
-                         </div> `
-        }
-        ).join("")
+            return lifestylediv(item)
+        }).join("")
         poularjobscard.innerHTML = sitedata[0].english[2].carddata.map((item) => {
-            return `
-            <div class="bg-white rounded-lg relative pb-8 shadow-md overflow-hidden hover:scale-105 duration-500">
-            <img src=${item.imageUrl}
-                alt="Job" class="w-full h-64 object-cover">
-            <div class="p-6">
-                <h3 class="text-xl font-semibold text-gray-800">${item.title}</h3>
-                <p class="mt-2 text-gray-600">${item.description}</p>
-                <a href="#" class="absolute bottom-5 mt-4 text-blue-500 font-semibold hover:underline">View
-                    Details</a>
-            </div>
-        </div> `
-        }
-        ).join("")
-
-
+            return card(item)
+        }).join("")
 
     }
     if (japanese) {
         culture.innerHTML = sitedata[0].japanese[0].subSections.map((item) => {
-            return `
-                         <div class="mb-8">
-                                    <h2 class="text-2xl text-gray-100 font-bold mb-4">${item.title}</h2>
-                                    <p class="text-gray-100 mb-4">${item.description}</p>
-                         </div> `
-        }
-        ).join("")
+            return culturediv(item)
+        }).join("")
         lifestyle.innerHTML = sitedata[0].japanese[1].subSections.map((item) => {
-            return `
-                         <div class="mb-8">
-                                    <h2 class="text-2xl text-gray-100 font-bold mb-4">${item.title}</h2>
-                                    <p class="text-gray-100 mb-4">${item.description}</p>
-                         </div> `
-        }
-        ).join("")
+            return lifestylediv(item)
+        }).join("")
         poularjobscard.innerHTML = sitedata[0].japanese[2].carddata.map((item) => {
-            return `
-            <div class="bg-white relative rounded-lg pb-8 shadow-md overflow-hidden hover:scale-105 duration-500">
-            <img src=${item.imageUrl}
-                alt="Job" class="w-full h-64 object-cover">
-            <div class="p-6">
-                <h3 class="text-xl font-semibold text-gray-800">${item.title}</h3>
-                <p class="mt-2 text-gray-600">${item.description}</p>
-                <a href="#" class="mt-4 text-blue-500 absolute bottom-5 font-semibold hover:underline">View
-                    Details</a>
-            </div>
-        </div> `
-        }
-        ).join("")
+            return card(item)
+        }).join("")
     }
 };
 
@@ -118,6 +109,7 @@ console.log("rendering")
 window.addEventListener('resize', handleResize);
 menubtn.addEventListener('click', toggleMenu);
 langbtn.addEventListener('click', togglelang);
+jobsearch.addEventListener('input', searchhandler);
 
 // slider 
 let currentIndex = 0;
